@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AVTOSALON</title>
+    <link rel="icon" href="28fc4a072e43bd416b4b3c0600b964bb.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Manrope:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <div id="intro"><span>M.H</span><i></i></div>
+    <header><a class="logo" href="#">M.H<b>.</b></a>
+        <nav><a href="#katalog">Katalog</a><a href="#brend">Brendlar</a><a href="#kredit">Kredit</a><a
+                href="#fikr">Fikrlar</a><a href="#aloqa">Aloqa</a></nav><button id="cartBtn">Savat <em
+                id="count">0</em></button>
+    </header>
+    <section class="hero"><img src="img/bmw.jpg" alt="BMW M5">
+        <div class="hero-t">
+            <p class="tag">Uychi · 2026 kolleksiyasi</p>
+            <h1>Tezlik.<br><span>Hashamat.</span><br>Sizniki.</h1>
+            <p>Dunyoning eng yaxshi avtomobillari — kafolat, rasmiy hujjat va bo'lib to'lash bilan.</p><a class="btn"
+                href="#katalog">Katalogni ko'rish</a>
+        </div>
+        <div class="stats">         
+            <div><b data-n="1200">0</b><small>Sotilgan avto</small></div>
+            <div><b data-n="15">0</b><small>Yillik tajriba</small></div>
+            <div><b data-n="48">0</b><small>Brend modellari</small></div>
+        </div>
+    </section>
+    <section id="brend" class="brands r"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg"
+            alt="BMW"><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg"
+            alt="Mercedes"><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg"
+            alt="Audi"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_carlogo.svg"
+            alt="Toyota"><img src="download.png" alt="Ferrari"><img
+            src="images (1).jpg" alt="Land Rover"></section>
+    <section id="katalog" class="r">
+        <div class="head">
+            <h2>Katalog</h2>
+            <div id="filters"></div>
+        </div><input id="q" placeholder="Model qidirish..."><select id="sort">
+            <option value="">Saralash</option>
+            <option value="a">Arzon → qimmat</option>
+            <option value="d">Qimmat → arzon</option>
+            <option value="h">Eng kuchli</option>
+        </select>
+        <div id="grid"></div>
+        <p id="found"></p>
+    </section>
+    <section class="interior r"><img src="img/interior.jpg" alt="Salon">
+        <div>
+            <p class="tag">Ichki dunyo</p>
+            <h2>Har bir chok — san'at.</h2>
+            <p>Italyan charmi, yog'och panellar va 64 rangli ambient yorug'lik.</p>
+        </div>
+    </section>
+    <div class="marquee">
+        <div><img src="img/bmw.jpg" alt=""><img src="img/ferrari.jpg" alt=""><img src="img/rangerover.jpg" alt=""><img
+                src="img/audi.jpg" alt=""><img src="img/toyota.jpg" alt=""><img src="img/porsche.jpg" alt=""><img
+                src="img/mercedes.jpg" alt=""><img src="img/bmw.jpg" alt=""><img src="img/ferrari.jpg" alt=""><img
+                src="img/rangerover.jpg" alt=""><img src="img/audi.jpg" alt=""><img src="img/toyota.jpg" alt=""><img
+                src="img/porsche.jpg" alt=""><img src="img/mercedes.jpg" alt=""></div>
+    </div>
+    <section id="kredit" class="calc r">
+        <div>
+            <p class="tag">Kredit kalkulyatori</p>
+            <h2>Oylik to'lovni hisoblang</h2>
+        </div>
+        <div class="cbox"><label>Narx: <b id="cp">$100,000</b><input type="range" id="price" min="20000" max="300000"
+                    step="1000" value="100000"></label><label>Boshlang'ich to'lov: <b id="cd">30%</b><input type="range"
+                    id="down" min="0" max="80" value="30"></label><label>Muddat: <b id="cm">24 oy</b><input type="range"
+                    id="months" min="6" max="60" step="6" value="24"></label>
+            <div class="res">Oylik: <b id="monthly">$0</b></div>
+        </div>
+    </section>
+    <section class="banner r"><img src="img/porsche.jpg" alt="Porsche">
+        <div>
+            <h2>Test-drayv — bepul.</h2>
+            <p>Istalgan modelni 24 soat davomida sinab ko'ring. Faqat haydovchilik guvohnomasi kerak.</p>
+        </div>
+    </section>
+    <section id="savat-q" class="r why">
+        <div>
+            <h3>01</h3>
+            <p>Rasmiy kafolat 5 yil</p>
+        </div>
+        <div>
+            <h3>02</h3>
+            <p>0% bo'lib to'lash 24 oy</p>
+        </div>
+        <div>
+            <h3>03</h3>
+            <p>Uyingizgacha yetkazib berish</p>
+        </div>
+    </section>
+    <section id="fikr" class="reviews r">
+        <h2>Mijozlar fikri</h2>
+        <div class="rv">
+            <div><img src="img/porsche.jpg" alt="">
+                <p>"Porsche'ni 3 kunda rasmiylashtirib berishdi. Xizmat a'lo!"</p><b>Jasur, Toshkent</b>
+            </div>
+            <div><img src="img/toyota.jpg" alt="">
+                <p>"Land Cruiser'ni bo'lib to'lashga oldim, foizsiz."</p><b>Dilnoza, Samarqand</b>
+            </div>
+            <div><img src="img/mercedes.jpg" alt="">
+                <p>"Test-drayvdan keyin darhol qaror qildim."</p><b>Bekzod, Buxoro</b>
+            </div>
+        </div>
+    </section>
+    <section class="faq r">
+        <h2>Savollar</h2>
+        <details>
+            <summary>Mashinani boshqa shaharga yetkazasizlarmi?</summary>
+            <p>Ha, O'zbekiston bo'ylab bepul yetkazib beramiz.</p>
+        </details>
+        <details>
+            <summary>Kafolat qancha?</summary>
+            <p>Barcha yangi avtomobillarga 5 yil rasmiy kafolat.</p>
+        </details>
+        <details>
+            <summary>Eski mashinamni topshirsam bo'ladimi?</summary>
+            <p>Ha, Trade-in orqali bozor narxida baholaymiz.</p>
+        </details>
+    </section>
+    <section id="aloqa" class="contact r">
+        <h2>Biz bilan bog'laning</h2>
+        <form id="form"><input placeholder="Ismingiz" required><input placeholder="+998 __ ___ __ __" required><button
+                class="btn">Yuborish</button></form>
+        <p id="msg"></p>
+    </section>
+    <footer>© 2026 M.H Avtosalon · Uychi, Uychi kochasi 18 uy.</footer>
+    <aside id="cart">
+        <div class="ch">
+            <h3>Savat</h3><button id="close">❌</button>
+        </div>
+        <ul id="items"></ul>
+        <div class="total">Jami: <b id="sum">$0</b></div><button class="btn" id="buy">Buyurtma berish</button>
+    </aside>
+    <div id="modal">
+        <div class="mbox"><img id="mimg" alt="">
+            <div>
+                <h2 id="mt"></h2>
+                <table id="mspec"></table><button class="btn" id="madd">Savatga qo'shish</button> <button class="ghost"
+                    id="mclose">Yopish</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
